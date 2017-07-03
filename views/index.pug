@@ -1,0 +1,13 @@
+extends _layout.pug
+
+block children
+  h1= title
+  p Lorem ipsum...
+  if isReady
+    p Ready!
+  else
+    p Not ready
+  ul
+    each st in stops
+      li= st.name
+  div !{html}
